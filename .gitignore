@@ -1,0 +1,7 @@
+TODO
+*.png
+trash
+Results
+__pycache__
+mlruns
+mlflow.db

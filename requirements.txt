@@ -1,0 +1,4 @@
+mlflow==2.11.3
+opencv-python==4.9.0.80
+torch==2.2.1
+torchvision==0.17.1
