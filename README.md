@@ -4,10 +4,10 @@ Inspired by this [Twitter Post](https://twitter.com/ArnaudPannatier/status/17628
 
 Please refer to this [blog post](https://dinesh-gdk.github.io/deep/learning/2024/04/07/deep-maze-solver.html) to see the thought process.
 
-### Aim
+## Aim
 The aim is to build a convolutional neural network(CNN) that can solve mazes using supervised learning. Given a maze image, the CNN has to find the path from the top left corner of the maze to the bottom right corner. We are using PyTorch for this task.
 
-### Dataset
+## Dataset
 Since creating and solving mazes is deterministic, we have an infinite dataset glitch. We are going to create mazes and solutions on the fly!
 
 To create a maze I’m using the **Recursive Division algorithm**, and to solve it, I’m using good old **Depth-first Search**. The dataset generated will only contain mazes of sizes from `5x5` to `127x127`. Here `nxn` means the number of blocks horizontally and vertically. We will resize the mazes to create an image of size `128x128` using nearest neighbor interpolation. 
@@ -22,10 +22,10 @@ Here is a sample input and label
   <img src="assets/sample_dataset.png" width="75%" height="auto"></img>
 </p>
 
-### Model
+## Model
 We are going to use regular **U-Net** to train the model
 
-### Quick Start
+## Quick Start
 You need **Python** and a virtual environment
 
 Install dependencies
@@ -50,7 +50,7 @@ To run and solve mazes you can use the inference script
 python3 -m <model-path> -s <maze-size> -o <output-path>
 ```
 
-### Result
+## Result
 Here are some sample results
 
 <p align="center">
@@ -67,5 +67,5 @@ Here are some sample results
 
 The model performs well for small and medium size mazes, but it is off a bit for larger mazes. I think this can be solved using a U-Net with a bigger size and using more data to train.
 
-### References
+## References
 Shoutout to this wonderful repo for providing the [U-Net code](https://github.com/LeeJunHyun/Image_Segmentation).
