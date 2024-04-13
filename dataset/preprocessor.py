@@ -2,7 +2,6 @@ import random
 
 import cv2
 import numpy as np
-import torch
 
 from constants import MAZE_MAX_SIZE, MAZE_MIN_SIZE, MODEL_INPUT_SIZE
 from dataset.maze import Grid, MazeGenerator, MazeSolver
