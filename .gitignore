@@ -5,3 +5,4 @@ Results
 __pycache__
 mlruns
 mlflow.db
+!assets/*.png
