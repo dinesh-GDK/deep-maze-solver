@@ -23,7 +23,7 @@ Here is a sample input and label
 </p>
 
 ## Model
-We are going to use regular **U-Net** to train the model
+We are going to use regular **U-Net** to solve this task
 
 ## Quick Start
 You need **Python** and a virtual environment
